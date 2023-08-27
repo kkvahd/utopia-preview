@@ -1,0 +1,134 @@
+body {
+    background-color: black;
+}
+
+/* Sidebar */
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Sidebar end */
+
+/* The button used to open the sidebar */
+.openbtn {
+    cursor: pointer;
+    /* background-color: #111; */
+    background: none;
+    color: white;
+    border: none;
+}
+
+#navbar-socials {
+    display: flex;
+    list-style-type: none;
+}
+
+.jumbotron {
+    background-image: url("./assets/banner.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.jumbotron img {
+    position: block;
+}
+
+.navbar {
+    padding: 0 3%;
+}
+
+#album-cover-container {
+    margin-top: 40px;
+}
+
+#album-cover {
+    height: 400px;
+    width: 400px;
+}
+
+#album-name {
+    position: absolute;
+    left: -3rem;
+    bottom: 8rem;
+    transform: rotate(270deg);
+    color: white;
+}
+
+#song-header {
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #navbar-socials {
+        flex-direction: column;
+        list-style-type: none;
+        position: absolute;
+        right: 0;
+        top: 120px;
+        margin-right: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #album-name {
+        position: static;
+        transform: rotate(0deg);
+    }
+
+    #navbar-socials {
+        display: none;
+    }
+
+}
