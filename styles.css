@@ -99,6 +99,33 @@ body {
     padding-top: 100px;
 }
 
+#trackListContainer img{
+    width: 24px;
+}
+
+.playButton {
+    margin-left: 30px;
+}
+
+.trackName {
+    text-align: left;
+    margin-top: -11px;
+}
+
+.artistName {
+    font-size: smaller;
+    margin-top: -10px;
+}
+
+.playerTimer {
+    text-align: right;
+}
+
+.shareIcon {
+    margin-left: 2px;
+    margin-top: -4px;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidebar {
@@ -130,5 +157,4 @@ body {
     #navbar-socials {
         display: none;
     }
-
 }
