@@ -93,6 +93,10 @@ body {
     color: white;
 }
 
+.track {
+    margin: 40px 0;
+}
+
 #song-header {
     text-align: center;
     color: white;
@@ -100,15 +104,23 @@ body {
 }
 
 #trackListContainer img{
-    width: 24px;
+    width: 30px;
+}
+
+.trackNumber {
+    text-align: right;
+}
+
+.playButtonContainer {
+    text-align: center;
 }
 
 .playButton {
-    margin-left: 30px;
+    top: 20px;
 }
 
 .trackName {
-    text-align: left;
+    /* text-align: left; */
     margin-top: -11px;
 }
 
