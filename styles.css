@@ -103,7 +103,7 @@ body {
     padding-top: 100px;
 }
 
-#trackListContainer img{
+#trackListContainer img {
     width: 30px;
 }
 
@@ -138,6 +138,11 @@ body {
     margin-top: -4px;
 }
 
+#music-video-iframe {
+    width: 1168px;
+    height: 657px;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidebar {
@@ -168,5 +173,26 @@ body {
 
     #navbar-socials {
         display: none;
+    }
+
+    #trackListContainer h5 {
+        font-size: small;
+    }
+
+    #trackListContainer p {
+        font-size: x-small;
+    }
+
+    .trackNumber {
+        text-align: left;
+    }
+    
+    .playButtonContainer {
+        text-align: left;
+    }
+
+    #music-video-iframe {
+        width: 500px;
+        height: 300px;
     }
 }
